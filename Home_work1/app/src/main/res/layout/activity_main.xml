@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/TextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <EditText
+        android:id="@+id/TextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Рост"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/TextName"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/TextNumberWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Вес"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/TextHeight"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <EditText
+        android:id="@+id/textNumberAge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Возраст"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/TextNumberWeight"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="341dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNumberAge" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="414dp"
+        android:layout_height="121dp"
+        android:text="Рассчитать"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
